@@ -31,15 +31,6 @@ Dans une équipe de recherche et d'enseignement, tout le monde n'a pas un agent 
 
 Établi le 15/11/2026 sur ce qui tourne réellement sur le serveur de l'école.
 
-## Captures
-
-Projet de démonstration créé pour ces captures, puis retiré.
-
-| Ordinateur | Téléphone |
-|---|---|
-| <img src="docs/captures/ordi-projets.png" alt="Liste des projets du membre" width="560"> | <img src="docs/captures/tel-projets.png" alt="Liste des projets sur téléphone" width="200"> |
-| <img src="docs/captures/ordi-session.png" alt="Session Claude du projet, barre « Message à la session » en bas" width="560"> | <img src="docs/captures/tel-session.png" alt="La même session sur téléphone" width="200"> |
-
 ## Ce qui est construit
 
 En service. Fonctions en place :

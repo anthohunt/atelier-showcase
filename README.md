@@ -31,15 +31,6 @@ In a research and teaching team, not everyone has a coding agent installed, conf
 
 Drawn on 15/11/2026 from what actually runs on the school server. The diagram labels are in French.
 
-## Screenshots
-
-A demo project was created for these screenshots, then removed.
-
-| Computer | Phone |
-|---|---|
-| <img src="docs/captures/ordi-projets.png" alt="The member's project list" width="560"> | <img src="docs/captures/tel-projets.png" alt="Project list on a phone" width="200"> |
-| <img src="docs/captures/ordi-session.png" alt="The project's Claude session, with the "Message to the session" bar at the bottom" width="560"> | <img src="docs/captures/tel-session.png" alt="The same session on a phone" width="200"> |
-
 ## What is built
 
 In service. Functions in place:
