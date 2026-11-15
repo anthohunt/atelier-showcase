@@ -37,8 +37,8 @@ Projet de démonstration créé pour ces captures, puis retiré.
 
 | Ordinateur | Téléphone |
 |---|---|
-| ![Liste des projets du membre](docs/captures/ordi-projets.png) | ![Liste des projets sur téléphone](docs/captures/tel-projets.png) |
-| ![Session Claude du projet, barre « Message à la session » en bas](docs/captures/ordi-session.png) | ![La même session sur téléphone](docs/captures/tel-session.png) |
+| <img src="docs/captures/ordi-projets.png" alt="Liste des projets du membre" width="560"> | <img src="docs/captures/tel-projets.png" alt="Liste des projets sur téléphone" width="200"> |
+| <img src="docs/captures/ordi-session.png" alt="Session Claude du projet, barre « Message à la session » en bas" width="560"> | <img src="docs/captures/tel-session.png" alt="La même session sur téléphone" width="200"> |
 
 ## Ce qui est construit
 

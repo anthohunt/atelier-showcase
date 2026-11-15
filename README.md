@@ -37,8 +37,8 @@ A demo project was created for these screenshots, then removed.
 
 | Computer | Phone |
 |---|---|
-| ![The member's project list](docs/captures/ordi-projets.png) | ![Project list on a phone](docs/captures/tel-projets.png) |
-| ![The project's Claude session, with the "Message to the session" bar at the bottom](docs/captures/ordi-session.png) | ![The same session on a phone](docs/captures/tel-session.png) |
+| <img src="docs/captures/ordi-projets.png" alt="The member's project list" width="560"> | <img src="docs/captures/tel-projets.png" alt="Project list on a phone" width="200"> |
+| <img src="docs/captures/ordi-session.png" alt="The project's Claude session, with the "Message to the session" bar at the bottom" width="560"> | <img src="docs/captures/tel-session.png" alt="The same session on a phone" width="200"> |
 
 ## What is built
 
