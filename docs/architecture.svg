@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 905" width="640" height="905" font-family="-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif">
+  <defs>
+    <marker id="fl" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#0B2A4A"/>
+    </marker>
+  </defs>
+  <rect width="640" height="905" fill="#FFFFFF"/>
+  <text x="320" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#0B2A4A">Atelier : une session Claude partagée en ligne</text>
+
+  <!-- membres -->
+  <rect x="50" y="58" width="240" height="72" rx="10" fill="#E8F0FA" stroke="#1E5AA8" stroke-width="2"/>
+  <text x="170" y="86" text-anchor="middle" font-size="16" font-weight="700" fill="#0B2A4A">Membre du projet</text>
+  <text x="170" y="110" text-anchor="middle" font-size="14" fill="#0B2A4A">navigateur, ordinateur</text>
+  <rect x="350" y="58" width="240" height="72" rx="10" fill="#E8F0FA" stroke="#1E5AA8" stroke-width="2"/>
+  <text x="470" y="86" text-anchor="middle" font-size="16" font-weight="700" fill="#0B2A4A">Membre du projet</text>
+  <text x="470" y="110" text-anchor="middle" font-size="14" fill="#0B2A4A">navigateur, téléphone</text>
+  <path d="M170,130 V152 H470 V130" stroke="#0B2A4A" stroke-width="2" fill="none"/>
+  <path d="M320,152 V246" stroke="#0B2A4A" stroke-width="2" fill="none" marker-end="url(#fl)"/>
+  <text x="330" y="176" font-size="13" fill="#1E5AA8">aucun compte Claude chez les membres</text>
+  <text x="330" y="193" font-size="13" fill="#1E5AA8">VPN de l'école · HTTP + WebSocket</text>
+
+  <!-- serveur -->
+  <rect x="20" y="210" width="600" height="525" rx="12" fill="#F7FAFE" stroke="#0B2A4A" stroke-width="2" stroke-dasharray="7 5"/>
+  <text x="36" y="233" font-size="14" font-weight="700" fill="#0B2A4A">Serveur lab-hitec (école) · Docker</text>
+
+  <!-- conteneur -->
+  <rect x="50" y="248" width="540" height="320" rx="10" fill="#FFFFFF" stroke="#1E5AA8" stroke-width="2"/>
+  <path d="M50,258 a10,10 0 0 1 10,-10 h520 a10,10 0 0 1 10,10 v22 h-540 z" fill="#1E5AA8"/>
+  <text x="320" y="270" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">Atelier · port 9798</text>
+
+  <rect x="70" y="296" width="500" height="72" rx="8" fill="#E8F0FA" stroke="#1E5AA8" stroke-width="1.5"/>
+  <text x="320" y="320" text-anchor="middle" font-size="15" font-weight="700" fill="#0B2A4A">Serveur Node.js</text>
+  <text x="320" y="341" text-anchor="middle" font-size="13.5" fill="#0B2A4A">connexion des membres · accès : membre du projet ou admin</text>
+  <text x="320" y="359" text-anchor="middle" font-size="13.5" fill="#0B2A4A">fermeture automatique chaque soir à 20 h</text>
+  <path d="M320,368 V390" stroke="#0B2A4A" stroke-width="2" fill="none" marker-end="url(#fl)"/>
+
+  <rect x="70" y="392" width="500" height="64" rx="8" fill="#E8F0FA" stroke="#1E5AA8" stroke-width="1.5"/>
+  <text x="320" y="416" text-anchor="middle" font-size="15" font-weight="700" fill="#0B2A4A">ttyd · le terminal du projet dans la page</text>
+  <text x="320" y="439" text-anchor="middle" font-size="13.5" fill="#0B2A4A">plus une barre « Message à la session »</text>
+  <path d="M320,456 V478" stroke="#0B2A4A" stroke-width="2" fill="none" marker-end="url(#fl)"/>
+
+  <rect x="70" y="480" width="500" height="72" rx="8" fill="#FFF4CC" stroke="#F5B700" stroke-width="2"/>
+  <text x="320" y="505" text-anchor="middle" font-size="15" font-weight="700" fill="#0B2A4A">tmux · une session Claude Code par projet</text>
+  <text x="320" y="527" text-anchor="middle" font-size="13.5" fill="#0B2A4A">la même pour tous les membres, dans le dossier du projet,</text>
+  <text x="320" y="545" text-anchor="middle" font-size="13.5" fill="#0B2A4A">elle reste ouverte quand on ferme le navigateur</text>
+
+  <!-- disque -->
+  <path d="M320,568 V596" stroke="#0B2A4A" stroke-width="2" fill="none" marker-end="url(#fl)"/>
+  <rect x="50" y="598" width="540" height="112" rx="10" fill="#E8F0FA" stroke="#0B2A4A" stroke-width="1.5"/>
+  <text x="320" y="622" text-anchor="middle" font-size="15" font-weight="700" fill="#0B2A4A">Disque du serveur (volumes Docker)</text>
+  <text x="70" y="650" font-size="13.5" fill="#0B2A4A">• comptes des membres, projets</text>
+  <text x="70" y="674" font-size="13.5" fill="#0B2A4A">• dossier de travail par projet</text>
+  <text x="70" y="698" font-size="13.5" fill="#0B2A4A">• un dépôt git par projet</text>
+  <text x="340" y="650" font-size="13.5" fill="#0B2A4A">• conversations (reprise)</text>
+  <text x="340" y="674" font-size="13.5" fill="#0B2A4A">• compétences (lecture seule)</text>
+
+  <!-- compte Claude -->
+  <path d="M70,516 H35 V760 H320 V788" stroke="#0B2A4A" stroke-width="2" fill="none" marker-end="url(#fl)"/>
+  <rect x="100" y="790" width="440" height="98" rx="10" fill="#FFF4CC" stroke="#F5B700" stroke-width="2"/>
+  <text x="320" y="818" text-anchor="middle" font-size="16" font-weight="700" fill="#0B2A4A">API Claude (Anthropic)</text>
+  <text x="320" y="842" text-anchor="middle" font-size="13.5" fill="#0B2A4A">un seul compte Claude, celui du titulaire,</text>
+  <text x="320" y="862" text-anchor="middle" font-size="13.5" fill="#0B2A4A">fait tourner toutes les sessions (modèle Opus)</text>
+</svg>

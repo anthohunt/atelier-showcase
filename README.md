@@ -8,6 +8,10 @@
 
 A web portal that opens, for each team project, a coding-agent session shared by all its members, with a built-in meeting assistant.
 
+[![Two members, one on a computer and one on a phone, write to the same Claude session (click for the full video)](docs/demo.gif)](https://drive.google.com/file/d/1izOPSN_ErBeVkxRjEOXjuPUVodxSp9to/view)
+
+*Two members of a demo project, one on a computer and one on a phone, work in the same Claude session. [Full video (1:23)](https://drive.google.com/file/d/1izOPSN_ErBeVkxRjEOXjuPUVodxSp9to/view).*
+
 ## The problem
 
 In a research and teaching team, not everyone has a coding agent installed, configured and connected to the right files. Atelier puts that agent in a browser. Each project member logs in and finds the same session, the same working folder and the same conversation. Colleagues use it to design course applications or to write change requests for an existing application.
@@ -20,6 +24,21 @@ In a research and teaching team, not everyone has a coding agent installed, conf
 - Each project has a shared folder that the agent keeps up to date as work goes on.
 - Conversations are kept on disk: after an interruption, the session resumes where it stopped.
 - Updates are deployed by reloading the server, without cutting the running sessions.
+
+## Architecture
+
+![Atelier architecture: members go through the school VPN; the Node.js server, ttyd and tmux run one Claude Code session per project; a single Claude account runs every session](docs/architecture.svg)
+
+Drawn on 15/11/2026 from what actually runs on the school server. The diagram labels are in French.
+
+## Screenshots
+
+A demo project was created for these screenshots, then removed.
+
+| Computer | Phone |
+|---|---|
+| ![The member's project list](docs/captures/ordi-projets.png) | ![Project list on a phone](docs/captures/tel-projets.png) |
+| ![The project's Claude session, with the "Message to the session" bar at the bottom](docs/captures/ordi-session.png) | ![The same session on a phone](docs/captures/tel-session.png) |
 
 ## What is built
 

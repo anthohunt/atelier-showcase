@@ -8,6 +8,10 @@
 
 Un portail web qui ouvre, pour chaque projet d'équipe, une session d'agent de programmation partagée par tous ses membres, avec un assistant de réunion intégré.
 
+[![Deux membres, l'un sur ordinateur, l'autre sur téléphone, écrivent à la même session Claude (cliquer pour la vidéo complète)](docs/demo.gif)](https://drive.google.com/file/d/1izOPSN_ErBeVkxRjEOXjuPUVodxSp9to/view)
+
+*Deux membres d'un projet de démonstration, l'un sur ordinateur, l'autre sur téléphone, travaillent dans la même session Claude. [Vidéo complète (1 min 23)](https://drive.google.com/file/d/1izOPSN_ErBeVkxRjEOXjuPUVodxSp9to/view).*
+
 ## Le problème
 
 Dans une équipe de recherche et d'enseignement, tout le monde n'a pas un agent de programmation installé, configuré et relié aux bons fichiers. L'Atelier met cet agent dans un navigateur. Chaque membre d'un projet se connecte et retrouve la même session, le même dossier de travail et la même conversation. Il sert à des collègues qui conçoivent des applications de cours ou rédigent des demandes d'évolution sur une application existante.
@@ -20,6 +24,21 @@ Dans une équipe de recherche et d'enseignement, tout le monde n'a pas un agent 
 - Chaque projet a un dossier partagé que l'agent tient à jour au fil du travail.
 - Les conversations sont gardées sur disque : après une coupure, la session reprend là où elle s'était arrêtée.
 - Les mises à jour se déploient par un rechargement du serveur, sans couper les sessions en cours.
+
+## Architecture
+
+![Architecture de l'Atelier : les membres passent par le VPN de l'école ; le serveur Node.js, ttyd et tmux font tourner une session Claude Code par projet ; un seul compte Claude fait tourner toutes les sessions](docs/architecture.svg)
+
+Établi le 15/11/2026 sur ce qui tourne réellement sur le serveur de l'école.
+
+## Captures
+
+Projet de démonstration créé pour ces captures, puis retiré.
+
+| Ordinateur | Téléphone |
+|---|---|
+| ![Liste des projets du membre](docs/captures/ordi-projets.png) | ![Liste des projets sur téléphone](docs/captures/tel-projets.png) |
+| ![Session Claude du projet, barre « Message à la session » en bas](docs/captures/ordi-session.png) | ![La même session sur téléphone](docs/captures/tel-session.png) |
 
 ## Ce qui est construit
 
