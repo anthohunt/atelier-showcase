@@ -1,55 +1,34 @@
 [English](README.md) · **Français**
 
-**Anthony Hunt** · [Fiche du projet sur ingevision.cloud](https://ingevision.cloud/?p=atelier) · [LinkedIn](https://www.linkedin.com/in/anthony-hunt-3948a9196) · [Profil GitHub](https://github.com/anthohunt)
-
-> Dépôt vitrine : le code et les données de ce projet sont privés ; ce README le décrit.
-
 # Atelier
 
-Un portail web qui ouvre, pour chaque projet d'équipe, une session d'agent de programmation partagée par tous ses membres, avec un assistant de réunion intégré.
+**Un seul compte Claude fait tourner les sessions de toute une équipe.** Chaque projet est une session Claude Code dans le navigateur, partagée par ses membres, qui n'ont pas besoin de compte Claude.
 
 [![Deux membres, l'un sur ordinateur, l'autre sur téléphone, écrivent à la même session Claude (cliquer pour la vidéo complète)](docs/demo.gif)](https://drive.google.com/file/d/1izOPSN_ErBeVkxRjEOXjuPUVodxSp9to/view)
 
-*Deux membres d'un projet de démonstration, l'un sur ordinateur, l'autre sur téléphone, travaillent dans la même session Claude. [Vidéo complète (1 min 23)](https://drive.google.com/file/d/1izOPSN_ErBeVkxRjEOXjuPUVodxSp9to/view).*
+*Deux membres, l'un sur ordinateur, l'autre sur téléphone, dans la même session. [Vidéo complète (1 min 12)](https://drive.google.com/file/d/1izOPSN_ErBeVkxRjEOXjuPUVodxSp9to/view)*
 
-## Le problème
+## Utilisation
 
-Dans une équipe de recherche et d'enseignement, tout le monde n'a pas un agent de programmation installé, configuré et relié aux bons fichiers. L'Atelier met cet agent dans un navigateur. Chaque membre d'un projet se connecte et retrouve la même session, le même dossier de travail et la même conversation. Il sert à des collègues qui conçoivent des applications de cours ou rédigent des demandes d'évolution sur une application existante.
-
-## Comment ça marche
-
-- Un projet égale une session. Le serveur la lance dans une session `tmux` placée dans le dossier de travail du projet.
-- `ttyd` affiche ce terminal dans le navigateur ; une barre « Message à la session » permet d'écrire à l'agent sans manipuler le terminal.
-- Règle d'accès unique : membre du projet ou administrateur.
-- Chaque projet a un dossier partagé que l'agent tient à jour au fil du travail.
-- Les conversations sont gardées sur disque : après une coupure, la session reprend là où elle s'était arrêtée.
-- Les mises à jour se déploient par un rechargement du serveur, sans couper les sessions en cours.
+- **Session partagée.** Tous les membres d'un projet ouvrent la même session et le même dossier de travail. Le compte Claude du titulaire la fait tourner.
+- **Vue conversation.** Chaque message affiche le nom et l'avatar de son auteur. Les réponses de Claude sont mises en forme. Ses actions se replient en une ligne (`2 actions · index.html`) qui se déplie d'un clic. *Claude travaille · modifie index.html* s'affiche en direct chez tous les membres.
+- **Terminal.** Derrière le bouton `>_` sur ordinateur ; absent sur téléphone.
+- **Accueil.** Cartes des membres et de l'activité ; projets triés par activité. Un membre qui n'a qu'un projet arrive directement dedans.
+- **Console d'administration.** Comptes, membres, et projets rangés par glisser-déposer.
 
 ## Architecture
 
 ![Architecture de l'Atelier : les membres passent par le VPN de l'école ; le serveur Node.js, ttyd et tmux font tourner une session Claude Code par projet ; un seul compte Claude fait tourner toutes les sessions](docs/architecture.svg)
 
-Établi le 15/11/2026 sur ce qui tourne réellement sur le serveur de l'école.
+## Fonctionnement
 
-## Ce qui est construit
+| | Novembre 2026 |
+|---|---|
+| **Hébergement** | Serveur de l'école, accessible seulement par le VPN de l'école |
+| **Horaires** | Arrêt chaque jour à 20 h (Paris), conversations gardées ; réouverture sur demande |
+| **Pile** | Docker, Node.js, `tmux`, `ttyd` |
 
-En service. Fonctions en place :
+---
 
-- Fermeture automatique chaque jour à 20h00 (heure de Paris) : bandeau à 19h45, consigne à 19h50 aux sessions actives de mettre leur dossier à jour, arrêt des sessions à 20h00, conversations conservées. Réouverture sur demande seulement, 24 h au plus. Calcul des heures vérifié sur 13 cas sur 13 (été, hiver, jours de changement d'heure, minuit).
-- Assistant de réunion : transcription, synthèse en direct, compte rendu en arbre, panneau pour poser des questions ou donner des consignes à l'agent de réunion, canevas de nœuds et de liens modifiable, une seule réunion active à la fois.
-- Console d'administration : comptes, membres, projets rangés par glisser-déposer dans une arborescence de dossiers.
-- 15 compétences de la chaîne de conception d'applications web, synchronisées chaque heure vers les sessions.
-
-En août 2026, le serveur a été simplifié : l'idée d'un agent personnel par membre a été abandonnée au profit d'une session par projet (734 lignes ramenées à 549).
-
-## Ce qui est public
-
-Cette fiche est publique. L'outil, son code et les projets de l'équipe restent privés.
-
-## Pile technique
-
-- Node.js (serveur et WebSocket)
-- `tmux` et `ttyd`
-- Docker
-- Traefik
-- Interface en HTML et JavaScript
+**Anthony Hunt** · [ingevision.cloud](https://ingevision.cloud/?p=atelier) · [LinkedIn](https://www.linkedin.com/in/anthony-hunt-3948a9196) · [GitHub](https://github.com/anthohunt)
+Le code et les projets de l'équipe sont privés ; ce dépôt ne contient que cette page.
