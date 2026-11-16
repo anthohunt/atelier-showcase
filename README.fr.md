@@ -10,25 +10,24 @@
 
 ## Utilisation
 
-- **Session partagée.** Tous les membres d'un projet ouvrent la même session et le même dossier de travail. Le compte Claude du titulaire la fait tourner.
+- **Session partagée.** Tous les membres d'un projet ouvrent la même session et le même dossier de travail.
 - **Vue conversation.** Chaque message affiche le nom et l'avatar de son auteur. Les réponses de Claude sont mises en forme. Ses actions se replient en une ligne (`2 actions · index.html`) qui se déplie d'un clic. *Claude travaille · modifie index.html* s'affiche en direct chez tous les membres.
 - **Terminal.** Derrière le bouton `>_` sur ordinateur ; absent sur téléphone.
 - **Accueil.** Cartes des membres et de l'activité ; projets triés par activité. Un membre qui n'a qu'un projet arrive directement dedans.
-- **Console d'administration.** Comptes, membres, et projets rangés par glisser-déposer.
+- **Console d'administration.** Gère comptes et membres ; les projets se rangent par glisser-déposer.
 
 ## Architecture
 
 ![Architecture de l'Atelier : les membres passent par le VPN de l'école ; le serveur Node.js, ttyd et tmux font tourner une session Claude Code par projet ; un seul compte Claude fait tourner toutes les sessions](docs/architecture.svg)
 
-## Fonctionnement
+## Exploitation
 
-| | Novembre 2026 |
-|---|---|
-| **Hébergement** | Serveur de l'école, accessible seulement par le VPN de l'école |
-| **Horaires** | Arrêt chaque jour à 20 h (Paris), conversations gardées ; réouverture sur demande |
-| **Pile** | Docker, Node.js, `tmux`, `ttyd` |
+- **Hébergement.** Serveur de l'école, accessible seulement par le VPN de l'école.
+- **Horaires.** Arrêt chaque jour à 20 h (Paris), conversations conservées ; réouverture sur demande.
+- **Technologies.** Docker, Node.js, `tmux`, `ttyd`.
 
 ---
 
 **Anthony Hunt** · [ingevision.cloud](https://ingevision.cloud/?p=atelier) · [LinkedIn](https://www.linkedin.com/in/anthony-hunt-3948a9196) · [GitHub](https://github.com/anthohunt)
-Le code et les projets de l'équipe sont privés ; ce dépôt ne contient que cette page.
+
+Le code et les projets de l'équipe sont privés.
