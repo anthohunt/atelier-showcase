@@ -4,7 +4,7 @@
 
 **Un seul compte Claude fait tourner les sessions de toute une équipe.** Chaque projet est une session Claude Code dans le navigateur, partagée par ses membres, qui n'ont pas besoin de compte Claude.
 
-[![Deux membres, l'un sur ordinateur, l'autre sur téléphone, écrivent à la même session Claude (cliquer pour la vidéo complète)](docs/demo.gif)](https://drive.google.com/file/d/1izOPSN_ErBeVkxRjEOXjuPUVodxSp9to/view)
+[![Deux membres, l'un sur ordinateur, l'autre sur téléphone, écrivent à la même session Claude (cliquer pour la vidéo complète)](docs/demo.webp)](https://drive.google.com/file/d/1izOPSN_ErBeVkxRjEOXjuPUVodxSp9to/view)
 
 *Deux membres, l'un sur ordinateur, l'autre sur téléphone, dans la même session. [Vidéo complète (1 min 12)](https://drive.google.com/file/d/1izOPSN_ErBeVkxRjEOXjuPUVodxSp9to/view)*
 
