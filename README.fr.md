@@ -20,6 +20,12 @@
 
 ![Architecture de l'Atelier : les membres passent par le VPN de l'école ; le serveur Node.js, ttyd et tmux font tourner une session Claude Code par projet ; un seul compte Claude fait tourner toutes les sessions](docs/architecture.svg)
 
+<details><summary>Diagramme en français</summary>
+
+![Architecture de l'Atelier : les membres passent par le VPN de l'école ; le serveur Node.js, ttyd et tmux font tourner une session Claude Code par projet ; un seul compte Claude fait tourner toutes les sessions](docs/architecture.fr.svg)
+
+</details>
+
 ## Exploitation
 
 - **Hébergement.** Serveur de l'école, accessible seulement par le VPN de l'école.

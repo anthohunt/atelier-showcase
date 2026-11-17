@@ -20,7 +20,11 @@
 
 ![Atelier architecture: members go through the school VPN; the Node.js server, ttyd and tmux run one Claude Code session per project; a single Claude account runs every session](docs/architecture.svg)
 
-*Diagram labels are in French.*
+<details><summary>French version</summary>
+
+![Architecture de l'Atelier : les membres passent par le VPN de l'école ; le serveur Node.js, ttyd et tmux font tourner une session Claude Code par projet ; un seul compte Claude fait tourner toutes les sessions](docs/architecture.fr.svg)
+
+</details>
 
 ## Deployment
 
