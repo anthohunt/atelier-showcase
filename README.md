@@ -4,15 +4,15 @@
 
 **One Claude account runs a whole team's sessions.** Each project is a Claude Code session in the browser, shared by its members, who need no Claude account of their own.
 
-[![Two members, one on a computer and one on a phone, write to the same Claude session (click for the full video)](docs/demo.webp)](https://drive.google.com/file/d/1izOPSN_ErBeVkxRjEOXjuPUVodxSp9to/view)
+![Two members, one on a computer and one on a phone, write to the same Claude session](docs/demo.webp)
 
 <details><summary>French version</summary>
 
-[![Deux membres, l'un sur ordinateur, l'autre sur téléphone, écrivent à la même session Claude (cliquer pour la vidéo complète)](docs/demo.fr.webp)](https://drive.google.com/file/d/1zOC9KxR_g8lNqoLKmdUyXK_G6oWk3Rvx/view)
+![Deux membres, l'un sur ordinateur, l'autre sur téléphone, écrivent à la même session Claude](docs/demo.fr.webp)
 
 </details>
 
-*Two members, one on a computer, one on a phone, in the same session. [Full video (1:12)](https://drive.google.com/file/d/1izOPSN_ErBeVkxRjEOXjuPUVodxSp9to/view)*
+*Two members, one on a computer, one on a phone, in the same session.*
 
 ## Using it
 
